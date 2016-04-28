@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:id="@+id/toolbar4"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/back2"
+            android:layout_marginTop="19dp"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leftarrow"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminders"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_reminders"
+        android:padding="10dp"
+        android:background="@color/background">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

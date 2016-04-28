@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shikhar.personalassistant">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Set_up_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Subjects"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".dialog_entry"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"></activity>
+        <activity
+            android:name=".Reminders"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Reminder_entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".Notifa" />
+
+        <service android:name=".ReminderService" />
+
+    </application>
+
+</manifest>

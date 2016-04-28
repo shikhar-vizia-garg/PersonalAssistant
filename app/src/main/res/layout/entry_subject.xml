@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+    android:minHeight="200dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:typeface="monospace"
+        android:textColor="@color/maintextcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Subject"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/textView" />
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:background="@android:color/darker_gray"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:id="@+id/imageView8" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the subject name"
+        android:maxEms="20"
+        android:id="@+id/edit_entry_subject" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:background="@drawable/buttonstate"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button_ok"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/clear"
+        android:title="Clear all Subjects"
+        android:showAsAction="never">
+    </item>
+    <item android:id="@+id/add_subject"
+        android:title="Add Subject"
+        android:showAsAction="never">
+    </item>
+</menu>

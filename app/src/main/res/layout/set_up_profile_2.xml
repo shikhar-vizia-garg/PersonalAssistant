@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:clipToPadding="false"
+    android:background="@color/background">
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone"
+        android:id="@+id/cv_message"
+        android:elevation="12dp">
+        <RelativeLayout
+            android:id="@+id/messagelayout"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/TextStyle"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="You are now ready to go"
+                android:id="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonstate"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:id="@+id/button_go_profile"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:id="@+id/cv_subject_add">
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:id="@+id/usersubjectslayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="8dp">
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="You have no subjects added"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/message" />
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:elevation="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:id="@+id/button_add_subjects"
+                    android:src="@android:drawable/ic_input_add"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/button_go_next"
+                    android:layout_toStartOf="@+id/button_go_next"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:elevation="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:id="@+id/button_go_next"
+                    android:src="@android:drawable/ic_menu_agenda"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/cv_details"
+        android:elevation="12dp">
+    <GridLayout
+        android:id="@+id/userdetailslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:elevation="8dp">
+        <ImageView
+            android:paddingTop="8dp"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/user"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <EditText
+            style="@style/TextStyle"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter Your Name"
+            android:ems="10"
+            android:id="@+id/edit_name"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <ImageView
+            android:paddingRight="17dp"
+            android:layout_marginLeft="9dp"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/college"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_marginTop="30dp"
+            style="@style/TextStyle"
+            android:paddingTop="12dp"
+            android:hint="College Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_college"
+            android:ems="10"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <ImageView
+            android:paddingRight="14dp"
+            android:layout_marginLeft="9dp"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/coyrse"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_marginTop="30dp"
+            style="@style/TextStyle"
+            android:paddingTop="12dp"
+            android:hint="Course Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_course"
+            android:ems="10"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:background="@drawable/buttonstate"
+            android:textColor="@android:color/white"
+            android:id="@+id/setupprofile_next"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_gravity="end"/>
+    </GridLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar5"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/AppTheme.PopupOverlay"
+            android:titleTextColor="@android:color/white"
+            app:title="Profile"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+</FrameLayout>
